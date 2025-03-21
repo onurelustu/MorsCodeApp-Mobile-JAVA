@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background_main">
+
+    <Spinner
+        android:id="@+id/themeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:entries="@array/theme_options"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Metin veya Mors Kodu Girin"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/translationMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:translationY="50dp">
+
+        <RadioButton
+            android:id="@+id/textToMorse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Metinden Morsa"
+            android:checked="true"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/morseToText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Morstan Metne"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/translateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Çevir"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#6200EE"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_translate"
+        app:iconGravity="start"
+        app:iconTint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonuç burada görünecek"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="#33FFFFFF"
+        android:textColor="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/copyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonucu Kopyala"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#3F51B5"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_copy"
+        app:iconGravity="start"
+        app:iconTint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/shareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonucu Paylaş"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#9C27B0"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_share"
+        app:iconGravity="start"
+        app:iconTint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sesli Çal"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#00C4B4"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_play"
+        app:iconGravity="start"
+        app:iconTint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <SeekBar
+        android:id="@+id/frequencySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="2000"
+        android:progress="800"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <TextView
+        android:id="@+id/frequencyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ses Frekansı: 800 Hz"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sesi İndir"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#FF5722"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_download"
+        app:iconGravity="start"
+        app:iconTint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+</LinearLayout>

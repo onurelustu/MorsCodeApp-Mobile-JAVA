@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_background_learn">
+
+    <TextView
+        android:id="@+id/morseLessonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:text="A = .-"
+        android:textColor="#FFFFFF"
+        android:background="#33FFFFFF"
+        android:padding="10dp"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playMorseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sesi Çal"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#00C4B4"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_play"
+        app:iconGravity="start"
+        app:iconTint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextLessonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonraki Ders"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#FF5722"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="start"
+        app:iconTint="#FFFFFF"
+        android:alpha="0"
+        android:translationY="50dp" />
+</LinearLayout>

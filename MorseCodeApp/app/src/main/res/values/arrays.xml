@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="theme_options">
+        <item>Açık Tema</item>
+        <item>Koyu Gri Tema</item>
+    </array>
+</resources>
